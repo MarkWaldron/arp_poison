@@ -21,4 +21,20 @@ app.config(function ($stateProvider) {
         }
       }
     })
+    .state('result',{
+      url: '/result',
+      controller: 'resultCtrl',
+      templateUrl: 'js/result/result.html',
+      resolve: {
+        allTargets: function(scannerFactory){
+          return scannerFactory.getAllTargets()
+          .then(function(targets){
+            return targets.data;
+          })
+          .catch(null, function(error){
+            console.log(error)
+          })
+        }
+      }
+    })
 });
