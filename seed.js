@@ -23,6 +23,8 @@ var chalk = require('chalk');
 var connectToDb = require('./server/db');
 var User = Promise.promisifyAll(mongoose.model('User'));
 
+
+
 var seedUsers = function () {
 
     var users = [
