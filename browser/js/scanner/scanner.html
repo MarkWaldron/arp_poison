@@ -4,13 +4,13 @@
       <div class="form-group">
         <label for="targetone">Target One:</label>
         <select class="form-control" ng-model="target.targetone">
-          <option ng-repeat="target in targets">{{ target.ip }} : {{ target.mac }}</option>
+          <option ng-repeat="target in targets">{{ target.ip }}/{{ target.mac }}</option>
         </select>
       </div>
       <div class="form-group">
         <label for="targettwo">Target Two:</label>
         <select class="form-control" ng-model="target.targettwo">
-          <option ng-repeat="target in targets">{{ target.ip }} : {{ target.mac }}</option>
+          <option ng-repeat="target in targets">{{ target.ip }}/{{ target.mac }}</option>
         </select>
       </div>
       <button type="submit" class="btn btn-success">Poison</button>

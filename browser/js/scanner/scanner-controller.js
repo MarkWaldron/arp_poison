@@ -1,9 +1,9 @@
 app.controller('scannerCtrl', function($scope, allTargets, scannerFactory, $state){
   $scope.targets = allTargets;
-  $scope.poision = function(targets){
+  $scope.poison = function(targets){
     scannerFactory.poisonTargets(targets)
-    .then(function(){
-      $state.go('results')
+    .then(function(targets){
+      $state.go('home')
     })
   }
 })
