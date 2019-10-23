@@ -53,7 +53,7 @@
     "lodash": "^3.9.3",
     "mocha-mongoose": "^1.0.3",
     "mongodb": "^1.4.33",
-    "mongoose": "^4.0.7",
+    "mongoose": "^5.7.6",
     "net-ping": "^1.1.12",
     "node-libnmap": "^0.2.15",
     "node-macaddress": "^0.2.4",
